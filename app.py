@@ -7,16 +7,16 @@ def index():
 
 @app.route("/welcome")
 def welcome():
-    return "Welcome To Flask"
+    return "application"
 
     @app.route('/login')
     def login():
-        return render_template('index.html')
+        return render_template('login.html')
 
 
 @app.route('/register')
         def register():
-            return render_template('index.html')
+            return render_template('register.html')
 if __name__=='__main__':
     app.run(debug=True)
     
